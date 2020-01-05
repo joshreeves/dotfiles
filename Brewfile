@@ -77,6 +77,7 @@ cask 'transmit'
 cask 'vlc'
 # cask 'whatsapp'
 cask 'atom'
+cask 'ngrok'
 
 # Quicklook
 cask 'qlcolorcode'
