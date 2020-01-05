@@ -24,7 +24,7 @@ brew services start mysql
 mysqladmin -u root password ''
 
 # Install PHP extensions with PECL
-pecl install memcached imagick
+# pecl install memcached imagick
 
 # Install global Composer packages
 # /usr/local/bin/composer global require laravel/installer laravel/spark-installer laravel/valet
