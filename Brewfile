@@ -79,6 +79,7 @@ cask 'vlc'
 cask 'atom'
 cask 'ngrok'
 cask 'selfcontrol'
+cask 'dropbox'
 
 # Quicklook
 cask 'qlcolorcode'
