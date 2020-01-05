@@ -945,7 +945,7 @@ for app in "Activity Monitor" \
     "SizeUp" \
     "Spectacle" \
     "SystemUIServer" \
-    "Terminal" \
+    # "Terminal" \
     "Transmission" \
     "Tweetbot" \
     "Twitter" \
@@ -953,3 +953,5 @@ for app in "Activity Monitor" \
     killall "${app}" &> /dev/null
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
+read -p "Press enter to restart Terminal"
+killall "Terminal" &> /dev/null
