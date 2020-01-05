@@ -24,11 +24,11 @@ brew 'tree' # List directories in a tree structure
 brew 'zlib' # Needed for Memcached
 
 # Spatie Medialibrary
-brew 'jpegoptim'
-brew 'optipng'
-brew 'pngquant'
-brew 'svgo'
-brew 'gifsicle'
+# brew 'jpegoptim'
+# brew 'optipng'
+# brew 'pngquant'
+# brew 'svgo'
+# brew 'gifsicle'
 
 # Development
 brew 'php'
@@ -48,34 +48,35 @@ cask 'aerial'
 cask 'alfred'
 cask 'bartender'
 cask 'caffeine'
-cask 'discord'
+# cask 'discord'
 cask 'docker'
 cask 'firefox'
 cask 'github'
-cask 'google-backup-and-sync'
+# cask 'google-backup-and-sync'
 cask 'google-chrome'
-cask 'gpg-suite'
+# cask 'gpg-suite'
 cask 'insomnia'
 cask 'java'
-cask 'mysqlworkbench'
-cask 'phpstorm'
-cask 'screenflow'
+# cask 'mysqlworkbench'
+# cask 'phpstorm'
+# cask 'screenflow'
 cask 'sip'
-cask 'skype'
+# cask 'skype'
 cask 'slack'
-cask 'sublime-text'
+# cask 'sublime-text'
 cask 'tableplus'
-cask 'telegram-desktop'
-cask 'there'
+# cask 'telegram-desktop'
+# cask 'there'
 cask 'the-unarchiver'
 cask 'tor-browser'
-cask 'transmission'
+# cask 'transmission'
 cask 'transmit'
-cask 'vagrant'
-cask 'virtualbox' # Might need to allow access in Security settings
-cask 'virtualbox-extension-pack'
+# cask 'vagrant'
+# cask 'virtualbox' # Might need to allow access in Security settings
+# cask 'virtualbox-extension-pack'
 cask 'vlc'
-cask 'whatsapp'
+# cask 'whatsapp'
+cask 'atom'
 
 # Quicklook
 cask 'qlcolorcode'
@@ -95,10 +96,10 @@ cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 
 # Mac App Store
-mas 'Byword', id: 420212497
-mas 'Giphy Capture', id: 668208984
+# mas 'Byword', id: 420212497
+# mas 'Giphy Capture', id: 668208984
 mas 'Keynote', id: 409183694
 mas 'Numbers', id: 409203825
 mas 'Spark', id: 1176895641
 mas 'Things', id: 904280696
-mas 'Tweetbot', id: 1384080005
+# mas 'Tweetbot', id: 1384080005
