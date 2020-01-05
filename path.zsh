@@ -1,5 +1,5 @@
 # Load Composer tools
-export PATH="$HOME/.composer/vendor/bin:$PATH"
+# export PATH="$HOME/.composer/vendor/bin:$PATH"
 
 # Load Node global installed binaries
 export PATH="$HOME/.node/bin:$PATH"
@@ -11,3 +11,8 @@ export PATH="node_modules/.bin:vendor/bin:$PATH"
 # I've disabled this for now because I only use "ls" which is
 # referenced in my aliases.zsh file directly.
 #export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+
+# Load Android sdk
+export ANDROID_HOME=${HOME}/Library/Android/sdk
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
