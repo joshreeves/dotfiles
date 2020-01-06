@@ -81,6 +81,7 @@ cask 'atom'
 cask 'ngrok'
 cask 'selfcontrol'
 cask 'dropbox'
+cask 'spotify'
 
 # Quicklook
 cask 'qlcolorcode'
