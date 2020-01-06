@@ -110,5 +110,9 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias safari="open -a Safari"
+alias slack="open -a Slack"
+alias 1p="open -a '1Password 7'"
+
 # Init rbenv
 eval "$(rbenv init -)"
