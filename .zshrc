@@ -112,7 +112,18 @@ export LANG=en_US.UTF-8
 
 alias safari="open -a Safari"
 alias slack="open -a Slack"
+alias spark="open -a Spark"
+alias spotify="open -a Spotify"
 alias 1p="open -a '1Password 7'"
+alias sp="open 'x-apple.systempreferences:'"
+alias work="open -a Slack ; open -a Spark"
+alias dotfiles="atom ~/.dotfiles"
+alias bloomcode="atom ~/Sites/bloom-wineclub"
 
 # Init rbenv
 eval "$(rbenv init -)"
+
+# Init nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

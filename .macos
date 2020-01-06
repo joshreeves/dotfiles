@@ -33,7 +33,8 @@ defaults write com.apple.systemsound com.apple.sound.uiaudio.enabled -bool false
 # defaults write com.apple.universalaccess reduceTransparency -bool true
 
 # Set highlight color to green
-defaults write NSGlobalDomain AppleHighlightColor -string "0.223500 0.203900 0.192200"
+# defaults write NSGlobalDomain AppleHighlightColor -string "0.223500 0.203900 0.192200"
+defaults write NSGlobalDomain AppleHighlightColor -string "0.000000 0.635300 0.482400"
 
 # Set sidebar icon size to medium
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2

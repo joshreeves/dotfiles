@@ -5,6 +5,7 @@ tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 tap 'heroku/brew'
+tap 'mongodb/brew'
 
 # Binaries
 brew 'awscli'
@@ -45,6 +46,7 @@ brew 'yarn'
 brew 'rbenv'
 brew 'postgresql'
 brew 'heroku'
+brew 'mongodb-community@4.2'
 
 # Apps
 cask '1password'
@@ -111,3 +113,6 @@ mas 'Numbers', id: 409203825
 mas 'Spark', id: 1176895641
 # mas 'Things', id: 904280696
 # mas 'Tweetbot', id: 1384080005
+
+# oh-my-zsh add-ons
+brew 'fortune'

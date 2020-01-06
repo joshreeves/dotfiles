@@ -43,6 +43,11 @@ ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 # Symlink the Mackup config file to the home directory
 ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
 
+# Check for nvm and install if we don't have it
+if test ! $(which nvm); then
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
+fi
+
 # Set macOS preferences
 # We will run this last because this will reload the shell
 source .macos
