@@ -16,3 +16,6 @@ export PATH="node_modules/.bin:vendor/bin:$PATH"
 export ANDROID_HOME=${HOME}/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+
+# Load Qt in bath for bundle installing capybara-webkit
+export PATH="$(brew --prefix qt@5.5)/bin:$PATH"

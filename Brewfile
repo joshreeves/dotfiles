@@ -4,6 +4,7 @@ tap 'homebrew/cask-eid'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
+tap 'heroku/brew'
 
 # Binaries
 brew 'awscli'
@@ -42,6 +43,8 @@ brew 'node'
 brew 'redis'
 brew 'yarn'
 brew 'rbenv'
+brew 'postgresql'
+brew 'heroku'
 
 # Apps
 cask '1password'
