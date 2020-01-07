@@ -110,16 +110,6 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias safari="open -a Safari"
-alias slack="open -a Slack"
-alias spark="open -a Spark"
-alias spotify="open -a Spotify"
-alias 1p="open -a '1Password 7'"
-alias sp="open 'x-apple.systempreferences:'"
-alias work="open -a Slack ; open -a Spark"
-alias dotfiles="atom ~/.dotfiles"
-alias bloomcode="atom ~/Sites/bloom-wineclub"
-
 # Init rbenv
 eval "$(rbenv init -)"
 

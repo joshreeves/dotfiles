@@ -47,6 +47,7 @@ brew 'rbenv'
 brew 'postgresql'
 brew 'heroku'
 brew 'mongodb-community@4.2'
+brew 'readline'
 
 # Apps
 cask '1password'
@@ -113,6 +114,7 @@ mas 'Numbers', id: 409203825
 mas 'Spark', id: 1176895641
 # mas 'Things', id: 904280696
 # mas 'Tweetbot', id: 1384080005
+mas 'Trello', id: 1278508951
 
 # oh-my-zsh add-ons
 brew 'fortune'
