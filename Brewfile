@@ -6,6 +6,7 @@ tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 tap 'heroku/brew'
 tap 'mongodb/brew'
+tap 'shopify/shopify'
 
 # Binaries
 brew 'awscli'
@@ -88,6 +89,8 @@ cask 'ngrok'
 cask 'selfcontrol'
 cask 'dropbox'
 cask 'spotify'
+cask 'iterm2'
+cask 'messenger'
 
 # Quicklook
 cask 'qlcolorcode'
