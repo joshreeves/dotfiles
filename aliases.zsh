@@ -88,3 +88,4 @@ alias work="open -a Safari ; open -a Slack ; open -a Spark ; open -a Trello ; op
 alias dotfiles="atom ~/.dotfiles"
 alias bloomcode="atom ~/Sites/bloom-wineclub"
 alias bloomngrok="ngrok http 3000 --subdomain=bloom"
+alias sd="open /System/Library/PreferencePanes/StartupDisk.prefPane/"

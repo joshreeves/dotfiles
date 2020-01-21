@@ -49,6 +49,7 @@ brew 'postgresql'
 brew 'heroku'
 brew 'mongodb-community@4.2'
 brew 'readline'
+brew 'rabbitmq'
 
 # Apps
 cask '1password'
