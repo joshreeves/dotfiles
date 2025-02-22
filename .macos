@@ -969,5 +969,9 @@ if test $(which rbenv); then
   echo "To initialize rbenv, run 'rbenv init'"
 fi
 
+if test $(which pyenv); then
+  echo "To initialize pyenv, run 'pyenv init'"
+fi
+
 read -p "Press enter to restart Terminal"
 killall "Terminal" &> /dev/null

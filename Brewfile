@@ -50,6 +50,7 @@ brew 'heroku'
 brew 'mongodb-community@4.2'
 brew 'readline'
 brew 'rabbitmq'
+brew 'pyenv'
 
 # Apps
 cask '1password'

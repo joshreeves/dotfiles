@@ -1,3 +1,5 @@
+export PATH=${PATH}:/usr/local/sbin
+
 # Load Composer tools
 # export PATH="$HOME/.composer/vendor/bin:$PATH"
 
@@ -19,3 +21,5 @@ export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
 # Load Qt in bath for bundle installing capybara-webkit
 export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
+
+export PATH=${PATH}:~/.local/bin

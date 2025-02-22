@@ -118,7 +118,12 @@ export LANG=en_US.UTF-8
 # Init rbenv
 eval "$(rbenv init -)"
 
+# Init pyenv
+eval "$(pyenv init -)"
+
 # Init nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
