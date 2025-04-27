@@ -16,11 +16,11 @@ alias sites="cd $HOME/Sites"
 alias projects="cd $HOME/Code"
 
 # Laravel
-alias a="herd php artisan"
-alias fresh="herd php artisan migrate:fresh --seed"
-alias tinker="herd php artisan tinker"
-alias seed="herd php artisan db:seed"
-alias serve="herd php artisan serve"
+# alias a="herd php artisan"
+# alias fresh="herd php artisan migrate:fresh --seed"
+# alias tinker="herd php artisan tinker"
+# alias seed="herd php artisan db:seed"
+# alias serve="herd php artisan serve"
 
 # PHP
 alias cfresh="rm -rf vendor/ composer.lock && composer i"
