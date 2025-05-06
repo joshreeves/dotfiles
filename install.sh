@@ -18,10 +18,10 @@ brew bundle
 brew tap homebrew/services
 
 # Start mysql service
-brew services start mysql
+# brew services start mysql
 
 # Set default MySQL root password and auth type.
-mysqladmin -u root password ''
+# mysqladmin -u root password ''
 
 # Install PHP extensions with PECL
 # pecl install memcached imagick
@@ -38,10 +38,10 @@ mkdir $HOME/Sites
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
-ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
+# ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
 # Symlink the Mackup config file to the home directory
-ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
+# ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
 
 # Check for nvm and install if we don't have it
 if test ! $(which nvm); then
