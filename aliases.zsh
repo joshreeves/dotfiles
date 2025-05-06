@@ -10,7 +10,7 @@ alias timestamp="date +%s"
 alias version="commit 'version'"
 
 # Directories
-alias dotfiles="cd $DOTFILES"
+# alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
 alias sites="cd $HOME/Sites"
 alias projects="cd $HOME/Code"
@@ -23,9 +23,9 @@ alias projects="cd $HOME/Code"
 # alias serve="herd php artisan serve"
 
 # PHP
-alias cfresh="rm -rf vendor/ composer.lock && composer i"
-alias composer="herd composer"
-alias php="herd php"
+# alias cfresh="rm -rf vendor/ composer.lock && composer i"
+# alias composer="herd composer"
+# alias php="herd php"
 
 # JS
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
@@ -35,7 +35,7 @@ alias watch="npm run dev"
 alias docker-composer="docker-compose"
 
 # SQL Server
-alias mssql="docker run -e ACCEPT_EULA=Y -e SA_PASSWORD=LaravelWow1986! -p 1433:1433 mcr.microsoft.com/mssql/server:2017-latest"
+# alias mssql="docker run -e ACCEPT_EULA=Y -e SA_PASSWORD=LaravelWow1986! -p 1433:1433 mcr.microsoft.com/mssql/server:2017-latest"
 
 # Git
 alias gs="git status"

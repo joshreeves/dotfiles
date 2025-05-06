@@ -9,7 +9,7 @@ add_to_path() {
 add_to_path "$DOTFILES/bin"
 
 # Load global Composer tools
-add_to_path "$HOME/.composer/vendor/bin"
+# add_to_path "$HOME/.composer/vendor/bin"
 
 # Load global Node installed binaries
 add_to_path "$HOME/.node/bin"

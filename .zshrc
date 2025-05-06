@@ -1,5 +1,6 @@
 # Path to your dotfiles.
-export DOTFILES=$HOME/.dotfiles
+# export DOTFILES=$HOME/.dotfiles
+export DOTFILES=$HOME
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -15,11 +16,10 @@ export MNML_RPROMPT=('mnml_cwd 20')
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME="random"
-# ZSH_THEME="nicoulaj"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="minimal"
+# ZSH_THEME="random"
+ZSH_THEME="nicoulaj"
+# ZSH_THEME="minimal"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
