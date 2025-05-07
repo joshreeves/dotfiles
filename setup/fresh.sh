@@ -31,8 +31,8 @@ fi
 brew update
 
 # Install all our dependencies with bundle (See Brewfile)
-brew tap homebrew/bundle
-brew bundle --file ./Brewfile
+# brew tap homebrew/bundle # Deprecated
+brew bundle --file $HOME/setup/Brewfile
 
 # Set default MySQL root password and auth type
 # mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;"
@@ -52,4 +52,4 @@ mkdir $HOME/Code
 # ln -s ./.mackup.cfg $HOME/.mackup.cfg
 
 # Set macOS preferences - we will run this last because this will reload the shell
-source ./.macos
+source $HOME/setup/.macos
