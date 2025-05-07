@@ -74,7 +74,7 @@ ZSH_THEME="nicoulaj"
 HIST_STAMPS="dd/mm/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM=$DOTFILES
+ZSH_CUSTOM="$DOTFILES/.zsh"
 
 setopt APPEND_HISTORY
 unsetopt INC_APPEND_HISTORY
