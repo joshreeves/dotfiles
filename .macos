@@ -20,7 +20,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Set computer name (as done via System Preferences → Sharing)
 sudo scutil --set ComputerName "Bloom/Josh MBP"
 sudo scutil --set HostName "Bloom/Josh MBP"
-sudo scutil --set LocalHostName "Bloom/Josh MBP"
+sudo scutil --set LocalHostName "Bloom-Josh-MBP"
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Bloom/Josh MBP"
 
 # Disable the sound effects on boot
@@ -177,7 +177,7 @@ defaults write NSGlobalDomain AppleMetricUnits -bool false
 # sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bool true
 
 # Set the timezone; see `sudo systemsetup -listtimezones` for other values
-sudo systemsetup -settimezone "America/Vancouver" > /dev/null
+sudo systemsetup -settimezone "America/Vancouver" 2>/dev/null 1>&2
 
 # Stop iTunes from responding to the keyboard media keys
 #launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
@@ -193,7 +193,7 @@ sudo pmset -a lidwake 1
 sudo pmset -a autorestart 1
 
 # Restart automatically if the computer freezes
-sudo systemsetup -setrestartfreeze on
+sudo systemsetup -setrestartfreeze on 2> /dev/null
 
 # Sleep the display after 15 minutes while charging
 sudo pmset -c displaysleep 15
@@ -211,7 +211,7 @@ sudo pmset -b sleep 5
 sudo pmset -a standbydelay 86400
 
 # Never go into computer sleep mode
-sudo systemsetup -setcomputersleep Off > /dev/null
+sudo systemsetup -setcomputersleep Off 2> /dev/null 1>&2
 
 # Hibernation mode
 # 0: Disable hibernation (speeds up entering sleep mode)
@@ -435,7 +435,7 @@ defaults write com.apple.dock show-recents -bool false
 # defaults write com.apple.dock showLaunchpadGestureEnabled -int 0
 
 # Reset Launchpad, but keep the desktop wallpaper intact
-find "${HOME}/Library/Application Support/Dock" -name "*-*.db" -maxdepth 1 -delete
+find "${HOME}/Library/Application Support/Dock" -name "*-*.db" -maxdepth 1 -delete 2> /dev/null
 
 # Add iOS & Watch Simulator to Launchpad
 sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app" "/Applications/Simulator.app"
@@ -512,6 +512,7 @@ defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 defaults write com.apple.Safari ProxiesInBookmarksBar "()"
 
 # Enable the Develop menu and the Web Inspector in Safari
+defaults write com.apple.Safari.SandboxBroker ShowDevelopMenu -bool true
 defaults write com.apple.Safari IncludeDevelopMenu -bool true
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
 defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
@@ -711,7 +712,7 @@ defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 # Disable local Time Machine backups
-hash tmutil &> /dev/null && sudo tmutil disablelocal
+hash tmutil &> /dev/null && sudo tmutil thinlocalsnapshots / 1000000000 4
 
 ###############################################################################
 # Activity Monitor                                                            #
@@ -955,13 +956,13 @@ for app in "Activity Monitor" \
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
 
-if test $(which rbenv); then
-  echo "To initialize rbenv, run 'rbenv init'"
-fi
+#if test $(which rbenv); then
+#  echo "To initialize rbenv, run 'rbenv init'"
+#fi
 
-if test $(which pyenv); then
-  echo "To initialize pyenv, run 'pyenv init'"
-fi
+#if test $(which pyenv); then
+#  echo "To initialize pyenv, run 'pyenv init'"
+#fi
 
 read -p "Press enter to restart Terminal"
 killall "Terminal" &> /dev/null
