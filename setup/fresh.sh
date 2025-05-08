@@ -41,6 +41,8 @@ brew bundle --file $HOME/setup/Brewfile
 mkdir $HOME/Code
 # mkdir $HOME/Herd
 
+mkdir $HOME/.nvm
+
 # Create Code subdirectories
 # mkdir $HOME/Code/blade-ui-kit
 # mkdir $HOME/Code/laravel

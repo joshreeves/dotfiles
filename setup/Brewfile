@@ -18,7 +18,7 @@ brew 'git'
 brew 'grep'
 brew 'httpie'
 brew 'jq' # Used for spatie/visit
-brew 'mackup'
+# brew 'mackup'
 brew 'mas' # Mac App Store manager
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 brew 'stripe/stripe-cli/stripe'
@@ -34,6 +34,7 @@ brew 'svn' # Needed to install fonts
 
 # Development
 brew 'imagemagick'
+brew 'nvm'
 brew 'yarn'
 brew 'rbenv'
 brew 'postgresql'
