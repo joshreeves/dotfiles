@@ -44,6 +44,7 @@ brew 'mongodb-community@8.0'
 brew 'readline'
 brew 'rabbitmq'
 brew 'pyenv'
+brew 'rustup'
 
 # Apps
 cask '1password@7'
