@@ -1,7 +1,7 @@
 [user]
   name = Josh Reeves
   email = josh@bloom.wine
-  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMLTe1CE9LopD0LoIDGKa379cSZbIHUe85znUjYf3PhS
+  signingkey = some-signing-key
 
 [color]
   ui = auto
